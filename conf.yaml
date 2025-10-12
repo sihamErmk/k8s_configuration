@@ -1,13 +1,6 @@
-network:
-  version: 2
-  renderer: networkd
-  ethernets:
-    enp0s3:
-      dhcp4: no
-      addresses:
-        - 192.168.100.2/24
-      routes:
-        - to: default
-          via: 192.168.100.1
-      nameservers:
-        addresses: [8.8.8.8, 8.8.4.4]
+sudo docker run -t -d \
+-p 8181:8181 \
+-p 8101:8101 \
+-p 6653:6653 \
+--name onos \
+onosproject/onos:2.7.0
