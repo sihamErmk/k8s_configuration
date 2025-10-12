@@ -8,3 +8,8 @@ sudo docker run -t -d \
   -p 6653:6653 \
   --name onos \
   onosproject/onos:2.7.0
+
+
+
+
+sudo docker run -t -d -p 8181:8181 -p 8101:8101 -p 6653:6653 --name onos onosproject/onos:2.7.0
